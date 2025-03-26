@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const formData = new FormData(event.target);
             const adat = Object.fromEntries(formData);
 
-            fetch("https://script.google.com/macros/s/AKfycbxXNuyntLnr1Lneos9osROaDP_YusJLFL7xaBZ-wAQEGGY4qCwfa5I3kUBz7bA4pz1wLw/exec", { // Cseréld ki a Google Apps Script URL-re
+            fetch("https://script.google.com/macros/s/AKfycbyZf7J_bZt4pSF5_rehWE7ZszW4zIikGsF-TMqJlH67w8iN_eVaXA9ebk1Xzj6mqjAQRg/exec", { // Cseréld ki a Google Apps Script URL-re
                 method: "POST",
                 body: JSON.stringify(adat),
                 headers: { "Content-Type": "application/json" }
@@ -25,4 +25,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
