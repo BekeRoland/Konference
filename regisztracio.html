@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Erdélyi Pálinkafőző Konferencia</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0aq ">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="regisztracio.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="rgb(0, 0, 0, 0.8)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Főmenü</a></li>
+                <li><a href="tudnivalok.html">Tudnivalók</a></li>
+                <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                <li><a href="regisztracio.html">Regisztráció</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+                <li><a href="eloadok.html">Előadók</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Erdélyi Kulturális Pálinka Konferencia</a></li>
+                <li class="hideOnMobile"><a href="index.html">Főmenü</a></li>
+                <li class="hideOnMobile"><a href="tudnivalok.html">Tudnivalók</a></li>
+                <li class="hideOnMobile"><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                <li class="hideOnMobile"><a href="regisztracio.html">Regisztráció</a></li>
+                <li class="hideOnMobile"><a href="galeria.html">Galéria</a></li>
+                <li class="hideOnMobile"><a href="eloadok.html">Előadók</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="rgb(0, 0, 0, 0.8)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">Vezetéknév</label>
+              <input type="text" id="fname" name="firstname" placeholder="Szent..">
+          
+              <label for="lname">Keresztnév</label>
+              <input type="text" id="lname" name="lastname" placeholder="Péter..">
+          
+              <label for="country">Ország</label>
+              <select id="country" name="country">
+                <option value="australia">Románia</option>
+                <option value="canada">Magyarország</option>
+                <option value="usa">Egyéb</option>
+              </select>
+              <label for="eloado">Előadó/Résztvevő</label>
+              <select id="eloado" name="eloado">
+                <option value="eloado">Előadó</option>
+                <option value="resztvevo">Résztvevő</option>
+              </select>
+          
+              <label for="subject">Leírás</label>
+              <textarea id="subject" name="subject" placeholder="Kérem adjon meg pár információt magáról.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Jelentkezés">
+          
+            </form>
+          </div>
+
+        <script>
+           function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+           } 
+
+           function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+           }
+        </script>
+    </body>
+</html>
